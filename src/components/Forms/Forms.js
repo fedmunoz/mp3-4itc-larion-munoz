@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Forms.css';
-// import {registerForm, loginForm} from './Transition';
+import {registerForm, loginForm} from './Transition';
 //icons are credited to riajulislam from flaticon.com
 import linkedin from './assets/linkedin.png';
 import facebook from './assets/facebook.png';
@@ -56,14 +56,14 @@ function FormContainer() {
           <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button id="loginBtn" type="button" class="toggle-btn">Login</button>
-                    <button id="registerBtn" type="button" class="toggle-btn">Register</button>
+                    <button id="loginBtn" type="button" class="toggle-btn" onClick={loginForm}>Login</button>
+                    <button id="registerBtn" type="button" class="toggle-btn" onClick={registerForm}>Register</button>
                 </div>
-                {/* <div class="social-icons">
+                <div class="social-icons">
                     <img src={linkedin} alt="logo"></img>
                     <img src={facebook} alt="logo"></img>
                     <img src={twitter} alt="logo"></img>
-                </div> */}
+                </div>
                 <form id="login" class="input-group" onSubmit={handleSubmitChange1}>
                     <input 
                     id="email"
