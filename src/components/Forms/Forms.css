@@ -9,7 +9,7 @@
 .hero {
     height: 100%;
     width: 100%;
-    background: url(./assets/bg01.png);
+    /* background: url(./assets/bg01.png); */
     /* background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(225,225,255,1) 35%, rgba(187,216,244,1) 100%); */
     z-index: -2;
@@ -39,13 +39,16 @@
     width: 380px;
     height: 480px;
     position: relative;
-    margin: 6% auto;
+    margin: 6% 10% 6% auto;
     /* background: white; */
-    background: rgba(255, 255, 255, 0.375);
+    background: white;
+    /* background: rgba(255, 255, 255, 0.375); */
     box-shadow: 0 0.75rem 2rem 0 rgb(0 0 0 / 10%);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 5px;
+    /* z-index: 50; */
+    /* float: right; */
     overflow: hidden;
 }
 
@@ -55,7 +58,7 @@
     position: relative;
     /* box-shadow: 0 0 20px 9px rgb(223, 223, 238); */
     border-radius: 30px;
-    border: solid rgb(255, 255, 255);
+    border: solid rgb(206, 191, 139);
     border-width: thin;
 }
 
@@ -74,7 +77,8 @@
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #e6caf1, #c0c9f5);
+    background: rgb(207, 197, 160);
+    /* background: linear-gradient(to right, #e6caf1, #c0c9f5); */
     border-radius: 30px;
     transition: .5s;
 }
@@ -96,6 +100,10 @@
     box-shadow: 0 0 20px 0 #7f7f7f3d;
     cursor: pointer;
     /* border-radius: 50%; */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); 
 }
 
 .input-group {
@@ -125,6 +133,10 @@
     padding: 10px 0;
 }
 
+.checkbox-row .forgot-pass {
+    padding: 0 0 0 80px;
+}
+
 .form-field {
     width: 100%;
     padding: 10px 0;
@@ -143,9 +155,11 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, #e6caf1, #c0c9f5);
+    background-color: rgb(207, 197, 160);
+    /* background: linear-gradient(to right, #e6caf1, #c0c9f5); */
     border: 0;
     outline: none;
     border-radius: 30px;
     font-weight: 600;
 }
+
