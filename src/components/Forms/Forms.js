@@ -9,8 +9,9 @@ import twitter from './assets/twitter.png';
 
 function FormContainer() {
     const [values, setValues] = useState({
-        firstName: "",
-        lastName: "",
+        // firstName: "",
+        // lastName: "",
+        name: "",
         email: "",
         password: "",
     })
@@ -18,12 +19,16 @@ function FormContainer() {
     const [submitted, setSubmitted] = useState(false);
     const [valid, setValid] = useState(false);
     
-    const handleFirstNameChange = (e) => {
-        setValues({...values, firstName: e.target.value});
-    }
+    // const handleFirstNameChange = (e) => {
+    //     setValues({...values, firstName: e.target.value});
+    // }
     
-    const handleLastNameChange = (e) => {
-        setValues({...values, lastName: e.target.value});
+    // const handleLastNameChange = (e) => {
+    //     setValues({...values, lastName: e.target.value});
+    // }
+
+    const handleNameChange = (e) => {
+        setValues({...values, name: e.target.value});
     }
     
     const handleEmailChange = (e) => {
@@ -84,12 +89,12 @@ function FormContainer() {
                     class="form-field"
                     type="text"
                     placeholder="Password"
-                    name="email"
-                    value={values.email}
+                    name="password"
+                    value={values.password}
                     onChange={handlePasswordChange}
                     disabled={valid}>
                     </input>
-                    {submitted && !values.email ? (
+                    {submitted && !values.password ? (
                     <span id="error">Please enter password.</span>
                     ) : null}
 
@@ -100,12 +105,16 @@ function FormContainer() {
                         type="checkbox">
                         </input>
                         <span>Remember Me</span>
+                        <span class="forgot-pass"><u>Forgot Password?</u></span>
+                    </div>
+                    <div class="forgot-pass">
+                        
                     </div>
                     <button class="submit-btn" type="submit" >Login</button>
                 </form>
 
                 <form id="register" class="input-group" onSubmit={handleSubmitChange2}>
-                <input 
+                {/* <input 
                     id="first-name"
                     class="form-field"
                     type="text"
@@ -131,6 +140,20 @@ function FormContainer() {
                     </input>
                     {submitted && !values.lastName ? (
                     <span id="error">Please enter last name.</span>
+                    ) : null} */}
+
+                    <input 
+                    id="last-name"
+                    class="form-field"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    value={values.name}
+                    onChange={handleNameChange}
+                    disabled={valid}>
+                    </input>
+                    {submitted && !values.name ? (
+                    <span id="error">Please enter name.</span>
                     ) : null}
 
                     <input 
@@ -152,12 +175,12 @@ function FormContainer() {
                     class="form-field"
                     type="text"
                     placeholder="Password"
-                    name="email"
-                    value={values.email}
+                    name="password"
+                    value={values.password}
                     onChange={handlePasswordChange}
                     disabled={valid}>
                     </input>
-                    {submitted && !values.email ? (
+                    {submitted && !values.password ? (
                     <span id="error">Please enter password.</span>
                     ) : null}
 
