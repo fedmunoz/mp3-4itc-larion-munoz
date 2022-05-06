@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mp3-4itc-larion-munoz/static/css/main.408bfbdd.css",
+    "main.js": "/mp3-4itc-larion-munoz/static/js/main.d937cf9f.js",
+    "static/js/787.aea86db8.chunk.js": "/mp3-4itc-larion-munoz/static/js/787.aea86db8.chunk.js",
+    "static/media/bghome.png": "/mp3-4itc-larion-munoz/static/media/bghome.079ca4131f0a1264ba90.png",
+    "static/media/twitter.png": "/mp3-4itc-larion-munoz/static/media/twitter.93ac3f9a344ecd5d01a4.png",
+    "static/media/linkedin.png": "/mp3-4itc-larion-munoz/static/media/linkedin.17e919bb623c20be8b80.png",
+    "static/media/facebook.png": "/mp3-4itc-larion-munoz/static/media/facebook.a5def58db1e9c1b38269.png",
+    "index.html": "/mp3-4itc-larion-munoz/index.html",
+    "main.408bfbdd.css.map": "/mp3-4itc-larion-munoz/static/css/main.408bfbdd.css.map",
+    "main.d937cf9f.js.map": "/mp3-4itc-larion-munoz/static/js/main.d937cf9f.js.map",
+    "787.aea86db8.chunk.js.map": "/mp3-4itc-larion-munoz/static/js/787.aea86db8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.408bfbdd.css",
+    "static/js/main.d937cf9f.js"
+  ]
+}
